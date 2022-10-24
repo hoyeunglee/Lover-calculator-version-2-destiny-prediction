@@ -1,0 +1,439 @@
+#Loop through all years and each loop through 1 to 19, for example 0.083 is year, count occurence of string of year in 1/(0.01*year)
+#boy and girl both use count as marks, three marks is highest for individual, it can have more than three marks which is exceptional which may be meaning your parents
+#three marks mean one side has action for love and feeling is stronger than two marks
+#two marks mean one side has feeling and less possible to have action which does not have mean no action
+#one marks mean one side has a good looking feeling and less less possible to have action
+#boy marks + girl marks = total marks
+#when total marks three marks mean spies or criminal arrange this
+#when total marks more or equal then four means normal couple
+#This program is worth multi millions US dollars.
+#This program can be used for Lover determination, Team forming, altheletes competitions
+#This program is kind of Human destiny prediction, correct using is not to manipulate, trust your mind and trust the feeling
+
+def elderone(year):
+    for kkkk in range(11,99):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            #print(str(kkkk) in str(kk/year), str(kkkk)," in ", str(kk/year));
+            if str(kkkk) in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            print("heart have action",kkkk, countlist);
+        if count == 2:
+            print("feel",kkkk, countlist);
+        if count > 3 or count == 1:
+            print("looks good or more than three",kkkk, countlist);
+
+
+def youngone(year):
+    for kkkk in range(1,10):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            if "0"+str(kkkk) in str(kk/year) or str(kkkk) + "0" in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            print("heart",kkkk, countlist);
+        if count == 2:
+            print("feel",kkkk, countlist);
+        if count > 3 or count == 1:
+            print("looks good or more than three",kkkk, countlist);
+
+def heartandfeel(year):
+    elderone(year);
+    youngone(year);
+
+
+heartandfeel(0.071);
+heartandfeel(0.083);
+heartandfeel(0.089);
+heartandfeel(0.091);
+heartandfeel(0.096);
+heartandfeel(0.098);
+heartandfeel(0.04);
+heartandfeel(0.006);
+
+# Lover calculator
+def elderone(year, file2):
+    file2.write("<tr><td>"+str(year)+"**************************</td><td>**************************</td><td>**************************</td></tr>");
+    for kkkk in range(11,99):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            #print(str(kkkk) in str(kk/year), str(kkkk)," in ", str(kk/year));
+            if str(kkkk) in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            file2.write("<tr><td>heart have action</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("heart have action",kkkk, countlist);
+        if count == 2:
+            file2.write("<tr><td>feel</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("feel",kkkk, countlist);
+        if count > 3 or count == 1:
+            file2.write("<tr><td>looks good or more than three</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("looks good or more than three",kkkk, countlist);
+
+
+def youngone(year, file2):
+    file2.write("<tr><td>"+str(year)+"**************************</td><td>**************************</td><td>**************************</td></tr>");
+    for kkkk in range(1,9):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            if "0"+str(kkkk) in str(kk/year) or str(kkkk) + "0" in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            file2.write("<tr><td>heart have action</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("heart have action",kkkk, countlist);
+        if count == 2:
+            file2.write("<tr><td>feel</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("feel",kkkk, countlist);
+        if count > 3 or count == 1:
+            file2.write("<tr><td>looks good or more than three</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("looks good or more than three",kkkk, countlist);
+
+
+def heartandfeel(year, file2):
+    elderone(year, file2);
+    youngone(year, file2);
+
+
+file2 = open("d:\\LoverCalculator.html","w");
+file2.write("<html>\n");
+file2.write("<table width='100%' border='1'>\n");
+for i in range(1, 100):
+    heartandfeel(0.001*i, file2);
+
+file2.write("</table>\n");
+file2.write("</html>\n");
+file2.close();
+
+
+
+#Three marks
+
+def elderone(year, file2):
+    file2.write("<tr><td>"+str(year)+"**************************</td><td>**************************</td><td>**************************</td></tr>");
+    for kkkk in range(11,99):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            #print(str(kkkk) in str(kk/year), str(kkkk)," in ", str(kk/year));
+            if str(kkkk) in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            file2.write("<tr><td>heart have action</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("heart have action",kkkk, countlist);
+
+
+
+def youngone(year, file2):
+    file2.write("<tr><td>"+str(year)+"**************************</td><td>**************************</td><td>**************************</td></tr>");
+    for kkkk in range(1,9):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            if "0"+str(kkkk) in str(kk/year) or str(kkkk) + "0" in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            file2.write("<tr><td>heart have action</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            #print("heart have action",kkkk, countlist);
+
+
+def heartandfeel(year, file2):
+    elderone(year, file2);
+    youngone(year, file2);
+
+
+file2 = open("d:\\Threemarks.html","w");
+file2.write("<html>\n");
+file2.write("<table width='100%' border='1'>\n");
+for i in range(1, 100):
+    heartandfeel(0.001*i, file2);
+
+file2.write("</table>\n");
+file2.write("</html>\n");
+file2.close();
+
+
+
+#Detail with day
+#First digit is girl, Second digit is boy
+
+
+for mmmm in range(6, 7):
+    for mmmmx in range(10,130,10):
+        if mmmmx >= 100:
+            print((mmmmx + mmmm)*0.0001);
+        else:
+            print((mmmmx + mmmm)*0.001);
+
+def elderone(year, file2, yourbirthmonth):
+    file2.write("<tr><td>"+str(year)+"**************************</td><td>**************************</td><td>**************************</td></tr>");
+    for kkkk in range(11,99):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            #print(str(kkkk) in str(kk/year), str(kkkk)," in ", str(kk/year));
+            if str(kkkk) in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            file2.write("<tr><td>heart have action</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            file2.write("<tr><td>"+"Boy------------------------------</td><td>-------count----------------</td><td>----------------------</td></tr>");
+            for mmmm in range(yourbirthmonth, yourbirthmonth+1):
+                for mmmmx in range(10,130,10):
+                    countlistxx = [];
+                    countxx = 0;
+                    if mmmmx >= 100:
+                        #print((mmmmx + mmmm)*0.0001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.0001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.0001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.0001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+                    else:
+                        #print((mmmmx + mmmm)*0.001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+            #print("heart have action",kkkk, countlist);
+        if count == 2:
+            file2.write("<tr><td>feel</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            file2.write("<tr><td>"+"Boy------------------------------</td><td>-----------------------</td><td>----------------------</td></tr>");
+            for mmmm in range(yourbirthmonth, yourbirthmonth+1):
+                for mmmmx in range(10,130,10):
+                    countlistxx = [];
+                    countxx = 0;
+                    if mmmmx >= 100:
+                        #print((mmmmx + mmmm)*0.0001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.0001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.0001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.0001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+                    else:
+                        #print((mmmmx + mmmm)*0.001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+            #print("feel",kkkk, countlist);
+        if count > 3 or count == 1:
+            file2.write("<tr><td>looks good or more than three</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            file2.write("<tr><td>"+"Boy------------------------------</td><td>-----------------------</td><td>----------------------</td></tr>");
+            for mmmm in range(yourbirthmonth, yourbirthmonth+1):
+                for mmmmx in range(10,130,10):
+                    countlistxx = [];
+                    countxx = 0;
+                    if mmmmx >= 100:
+                        #print((mmmmx + mmmm)*0.0001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.0001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.0001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.0001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+                    else:
+                        #print((mmmmx + mmmm)*0.001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+            #print("looks good or more than three",kkkk, countlist);
+
+def youngone(year, file2, yourbirthmonth):
+    file2.write("<tr><td>"+str(year)+"**************************</td><td>**************************</td><td>**************************</td></tr>");
+    for kkkk in range(1,8):
+        count = 0;
+        countlist = [];
+        for kk in range(1, 20):
+            #print(kk, str(kk/year));
+            if "0"+str(kkkk) in str(kk/year) or str(kkkk) + "0" in str(kk/year):
+                count = count + 1;
+                if kk == 8:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "dangers"]];
+                elif kk == 15:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Moon"]];
+                elif kk == 5:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Meet and health"]];
+                elif kk == 3:
+                    countlist = countlist + [[kkkk, kk, str(kk/year), "Vain"]];
+                else:
+                    countlist = countlist + [[kkkk, kk, str(kk/year)]];                 
+        if count == 3:
+            file2.write("<tr><td>heart have action</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            file2.write("<tr><td>"+"Boy------------------------------</td><td>-------count----------------</td><td>----------------------</td></tr>");
+            for mmmm in range(yourbirthmonth, yourbirthmonth+1):
+                for mmmmx in range(10,130,10):
+                    countlistxx = [];
+                    countxx = 0;
+                    if mmmmx >= 100:
+                        #print((mmmmx + mmmm)*0.0001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.0001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.0001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.0001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+                    else:
+                        #print((mmmmx + mmmm)*0.001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+            #print("heart have action",kkkk, countlist);
+        if count == 2:
+            file2.write("<tr><td>feel</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            file2.write("<tr><td>"+"Boy------------------------------</td><td>-----------------------</td><td>----------------------</td></tr>");
+            for mmmm in range(yourbirthmonth, yourbirthmonth+1):
+                for mmmmx in range(10,130,10):
+                    countlistxx = [];
+                    countxx = 0;
+                    if mmmmx >= 100:
+                        #print((mmmmx + mmmm)*0.0001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.0001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.0001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.0001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+                    else:
+                        #print((mmmmx + mmmm)*0.001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+            #print("feel",kkkk, countlist);
+        if count > 3 or count == 1:
+            file2.write("<tr><td>looks good or more than three</td>"+"<td>"+str(kkkk)+"</td>"+"<td>"+str(countlist)+"</td></tr>\n");
+            file2.write("<tr><td>"+"Boy------------------------------</td><td>-----------------------</td><td>----------------------</td></tr>");
+            for mmmm in range(yourbirthmonth, yourbirthmonth+1):
+                for mmmmx in range(10,130,10):
+                    countlistxx = [];
+                    countxx = 0;
+                    if mmmmx >= 100:
+                        #print((mmmmx + mmmm)*0.0001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.0001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.0001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.0001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+                    else:
+                        #print((mmmmx + mmmm)*0.001);
+                        for kkz in range(1, 20):
+                            if str(kkkk) in str(kkz/((mmmmx + mmmm)*0.001)):
+                                countxx = countxx + 1;
+                                countlistxx = countlistxx + [[kkz, str(kkz/((mmmmx + mmmm)*0.001))]];
+                        if countxx >= 1:
+                            file2.write("<tr><td>"+str((mmmmx + mmmm)*0.001)+"</td><td>"+str(countxx)+"</td><td>"+str(countlistxx)+"</td></tr>");
+            #print("looks good or more than three",kkkk, countlist);
+
+def heartandfeel(year, file2, yourbirthmonth):
+    elderone(year, file2, yourbirthmonth);
+    youngone(year, file2, yourbirthmonth);
+
+
+file2 = open("d:\\LoverCalculatorDetail.html","w");
+file2.write("<html>\n");
+file2.write("<table width='100%' border='1'>\n");
+yourbirthmonth = [INPUT by You]
+for i in range(1, 100):
+    heartandfeel(0.001*i, file2, yourbirthmonth);
+
+file2.write("</table>\n");
+file2.write("</html>\n");
+file2.close();
+
+
