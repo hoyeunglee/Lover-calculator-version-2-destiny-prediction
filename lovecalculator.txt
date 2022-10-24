@@ -5,7 +5,7 @@
 #one marks mean one side has a good looking feeling and less less possible to have action
 #boy marks + girl marks = total marks
 #when total marks three marks mean spies or criminal arrange this
-#when total marks more or equal then four means normal couple
+#when total marks more or equal than four means normal couple
 #This program is worth multi millions US dollars.
 #This program can be used for Lover determination, Team forming, altheletes competitions
 #This program is kind of Human destiny prediction, correct using is not to manipulate, trust your mind and trust the feeling
