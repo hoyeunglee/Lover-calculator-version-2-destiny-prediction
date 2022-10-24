@@ -14,7 +14,7 @@ boy marks + girl marks = total marks
 
 when total marks three marks mean spies or criminal arrange this
 
-when total marks more or equal then four means normal couple
+when total marks more or equal than four means normal couple
 
 This program is worth multi millions US dollars.
 
