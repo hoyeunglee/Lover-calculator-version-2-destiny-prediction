@@ -1,5 +1,7 @@
 # Lover-calculator-version-2-destiny-prediction
 
+I have virginity in 2023 and 2024 and not married. this calculation is for me to find who match with me.
+
 Loop through all years and each loop through 1 to 19, for example 0.083 is year, count occurence of string of year in 1/(0.01*year)
 
 boy and girl both use count as marks, three marks is highest for individual, it can have more than three marks which is exceptional which may be meaning your parents
@@ -25,3 +27,4 @@ This program is kind of Human destiny prediction, correct using is not to manipu
 Believe or not? And gate or Nor gate? Commit or not?
 
 結到婚嘅，先至係真嘅
+marriage and signed and wore ring can happen that means the truth.
