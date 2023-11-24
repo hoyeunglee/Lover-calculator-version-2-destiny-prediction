@@ -21,3 +21,7 @@ This program is worth multi millions US dollars.
 This program can be used for Lover determination, Team forming, altheletes competitions and criminal and spies search
 
 This program is kind of Human destiny prediction, correct using is not to manipulate, trust your mind and trust the feeling
+
+Believe or not? And gate or Nor gate? Commit or not?
+
+結到婚嘅，先至係真嘅
