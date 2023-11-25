@@ -17,7 +17,7 @@ boy marks + girl marks = total marks
 when total marks three marks mean spies or criminal arrange this
 
 when total marks more or equal than four means normal couple
-
+Remark: Left digit represent female, Right digit represent male
 This program is worth multi millions US dollars.
 
 This program can be used for Lover determination, Team forming, altheletes competitions and criminal and spies search
